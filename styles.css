@@ -1,0 +1,46 @@
+body {
+    background-color: #;
+    font-family: Comfortaa;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactform {
+    background-color: #;
+    font-family: ;
+    flood-color: #;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9rem;
+    margin-top:0;
+}
+
+#sendbutton {
+    display: flex;
+    float: right;
+    align-items: right;
+}
+
+
+#invalidcheck3 {
+    padding-left: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+    #contactform {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #contactform {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    #contactform {
+        background-color: initial;
+    }
