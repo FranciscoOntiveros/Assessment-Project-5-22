@@ -5,6 +5,29 @@ body {
     flex-direction: column;
 }
 
+/* Nav Bar */
+
+
+/* Footer */
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    color: pink;
+}
+
+/* Carousel */
+
+
+/* Main Page */
+
+
+/* About Page */
+
+
+/* Contact Form */
+
 #contactform {
     background-color: #;
     font-family: ;
@@ -22,7 +45,6 @@ body {
     float: right;
     align-items: right;
 }
-
 
 #invalidcheck3 {
     padding-left: 3rem;
