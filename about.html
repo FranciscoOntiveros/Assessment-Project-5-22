@@ -4,63 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="C:/Users/Bigge/Desktop/Bitwise Work/May Assessment/styles.css">
     <title>Document</title>
 </head>
 <body>
-   <!---Nav Bar--->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Welted Fellas</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+      <!---Nav Bar--->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Welted Fellas</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Leather Types
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Full Grain</a></li>
-                <li><a class="dropdown-item" href="#">Suede</a></li>
-                <li><a class="dropdown-item" href="#">Calfskin</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Leather Types
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Full Grain</a></li>
+                  <li><a class="dropdown-item" href="#">Suede</a></li>
+                  <li><a class="dropdown-item" href="#">Calfskin</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        <div class="container-fluid text-center text-dark">
+          <h2>About Me</h2>
+          <p>
+            I'm a Wordpress Apprentice for Bitwise Industries and am an avid fan of leather goods and fighting games.
+          </p>
         </div>
-    </nav>
-    
-    <!--Footer-->
-<footer class="bg-dark text-white pt-5 pb-4">
-  <div class="container text-center text-md-left">
-    <div class="row text-center text-md-left">
-      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Welted Fellas</h5>
-        <p>
-          <a href="index.html" class="text-white">Home</a>
-          <a href="about.html" class="text-white">About</a>
-          <a href="contact.html" class="text-white">Contact</a>
-          <a href="https://www.reddit.com/r/goodyearwelt/comments/77am8t/updated_introductory_leather_care_guide/" class="text-white">Recommended Products and How to use them.</a>
-          <a href="#carousel-indicators" class="text-white">Top of Page</a>
-        </p>
+  <div id="page-container">
+    <div id="content-wrap">
+        <!--Accordion-->
+      <div class="accordion" id="accordion-open">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-heading1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="true" aria-controls="panelsStayOpen-collapse1">
+              Why GYW footwear?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading1">
+            <div class="accordion-body">
+              I'm a big proponent of taking care of the things you have and staying grateful for what we own. As such it's important to get high quality items that we use everyday.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false" aria-controls="panelsStayOpen-collapse2">
+              Where's the site on Fighting games?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading2">
+            <div class="accordion-body">
+              That is currently a passion project of mine and as such I'm taking time to make it as beautiful as I can.
+              <br> 
+              I do plan on working on something akin to the dustloop wiki for Tekken players.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
+              Where can I find good Footwear?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
+            <div class="accordion-body">
+              <strong>Ebay</strong>, While getting new shoes is nice, it is often not affordable. As such searching for second-hand GYW shoes on sites like Ebay and Grailed is the best middle ground between affordability and quality.
+              <br>
+              As an example, I have quite a collection of GYW shoes, all of which were used when I purchased them. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--Footer-->
+  <div id="footer">
+      <div class="footer bg-dark text-white pt-5 pb-4">
+        <div class="row text-md-left">
+          <div class="container-fluid text-center">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
+              <div class="container-fluid text-md-left">
+                <div class="row">
+                  <div id="footer-info" class="row col-md-6">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Welted Fellas</h5>
+                    <ul>
+                      <li><a href="index.html" class="text-white">Home</a></li>
+                      <li><a href="about.html" class="text-white">About</a></li>
+                      <li><a href="contact.html" class="text-white">Contact</a></li>
+                      <li<a href="#carousel-indicators" class="text-white">Top of Page</a></li>
+                    </ul>
+                  </div>
+                  <div id="useful-links" class="row col-md-6">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
+                    <ul>
+                      <li><a
+                          href="https://www.reddit.com/r/goodyearwelt/comments/77am8t/updated_introductory_leather_care_guide"
+                          class="text-white">Recommended Products and How to use them.</a></li>
+                      <li><a href="https://youtu.be/o0htHyZ8grw" class="text-white">How to Mirror Shine</a></li>
+                      <li><a href="https://youtu.be/A5lxicuEJrA" class="text-white">Which Conditioner is right for your
+                          shoe</a></li>
+                    </ul>
+                  </div>
+                  <div id="socials" class="container-fluid pt-4">
+                    <section class="mb-4">
+                      <a href="#"><i class="fa fa-lg fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-lg fa-twitter"></i></a>
+                      <a href="#"><i class="fa fa-lg fa-instagram"></i></a>
+                      <a href="#"><i class="fa fa-lg fa-youtube"></i></a>
+                      <a href="#"><i class="fa fa-lg fa-github"></i></a>
+                    </section>
+                    <div class="text-center p-3" id="copyright">
+                      © 2020 Copyright: <a class="text-center" href="#">WeltedFellas.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</footer>
+  <!--Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
 </html>

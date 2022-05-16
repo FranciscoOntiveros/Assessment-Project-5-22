@@ -1,121 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap plugin header-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="C:/Users/Bigge/Desktop/Bitwise Work/May Assessment/styles.css">
-    <title>May Assessment Project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Bootstrap plugin header-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="C:/Users/Bigge/Desktop/Bitwise Work/May Assessment/styles.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>May Assessment Project</title>
 </head>
+
 <body>
-   <!---Nav Bar--->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Welted Fellas</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!---Nav Bar--->
+  <div class="sticky">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Welted Fellas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Leather Types
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Full Grain</a></li>
-            <li><a class="dropdown-item" href="#">Suede</a></li>
-            <li><a class="dropdown-item" href="#">Corrected Grain</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-</nav>
-<!--Carousel-->
-<div id="carousel-indicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Leather Types
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#full-grain">Full Grain</a></li>
+              <li><a class="dropdown-item" href="#suede">Suede</a></li>
+              <li><a class="dropdown-item" href="#corrected-grain">Corrected Grain</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <a href="https://www.redwingshoes.com/heritage/mens/Iron-Ranger-08111.html?gclid=Cj0KCQjw4PKTBhD8ARIsAHChzRKn-3l4ZeXPAWr47uPzH04lKYF6h0p5hLm2AZdOcKrzWFfC9OKli-kaAqvHEALw_wcB">
-      <img src="img/RWInitial.jpg"  class="d-block w-100" alt="Red Wing Iron Rangers Out of Box."></a>
-      <div id="carousel-caption" class="carousel-caption d-none d-md-block">
-        <h5>Red Wing Iron Rangers straight out of their box</h5>
-        <p>Brand new pair of Iron Rangers, photo taken before conditioner and wax applied.</p>
+  <!--Carousel-->
+  <div id="carousel-indicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a
+          href="https://www.redwingshoes.com/heritage/mens/Iron-Ranger-08111.html?gclid=Cj0KCQjw4PKTBhD8ARIsAHChzRKn-3l4ZeXPAWr47uPzH04lKYF6h0p5hLm2AZdOcKrzWFfC9OKli-kaAqvHEALw_wcB">
+          <img src="img/RWInitial.jpg" class="d-block w-100" alt="Red Wing Iron Rangers Out of Box."></a>
+        <div id="carousel-caption" class="carousel-caption d-none d-md-block">
+          <h5>Red Wing Iron Rangers straight out of their box</h5>
+          <p>Brand new pair of Iron Rangers, photo taken before conditioner and wax applied.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/RWbefore.jpg" class="d-block w-100" alt="Red Wing Iron Rangers before conditioning.">
+        <div id="carousel-caption" class="carousel-caption d-none d-md-block">
+          <h5>Beat Up Iron Rangers</h5>
+          <p>This pair has become dryed out and with many scuffs and scratches.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/RWafter.jpg" class="d-block w-100" alt="Red Wing Iron Rangers after conditioning.">
+        <div id="carousel-caption" class="carousel-caption d-none d-md-block">
+          <h5>Iron Rangers given the love they deserve</h5>
+          <p>Same pair after conditioning and rewaxing.</p>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="img/RWbefore.jpg" class="d-block w-100" alt="Red Wing Iron Rangers before conditioning.">
-      <div id="carousel-caption" class="carousel-caption d-none d-md-block">
-        <h5>Beat Up Iron Rangers</h5>
-        <p>This pair has become dryed out and with many scuffs and scratches.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/RWafter.jpg" class="d-block w-100" alt="Red Wing Iron Rangers after conditioning.">
-      <div id="carousel-caption" class="carousel-caption d-none d-md-block">
-        <h5>Iron Rangers given the love they deserve</h5>
-        <p>Same pair after conditioning and rewaxing.</p>
-      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Main Body-->
+  <div class="container-fluid">
+    <div class="text-center text-dark">
+      <h1>What is leather?</h1>
+      <p>
+        Leather is the byproduct of different animal products as well as the meat industry.
+        The levels of leather make up different types of leather seen on shoes. 
+        <br>
+        These include suede and full grain options.
+        The three types covered today are going to be Suede, full grain, and corrected grain leathers.
+        <br>
+        <img src="img/Leather types.jpg" alt="Leather Diagram">
+        <br>
+        This diagram shows the different types of leather products produced by a hide of leather.
+        Typically if you see a tag with "genuine leather" on a pair of shoes that is usually a sign of poor quality.
+        <br>
+        In the USA, what qualifies as "genuine leather" is typically left over leather bits molded together and glued.
+        <br>
+        As a whole you typically want products that show either what tannery they originate from, or their leather type.
+      </p>
+      <br>
+      <h2>What types of leather should I look for?</h2>
+      <p>
+        <div id="full-grain">
+          Leather comes in many different shapes and sizes. The types of leather available is endless,
+          Either from the different animals available or exotic animals as well.
+          <br>
+          Full-grain leather is simply the name given to most leathers that are used which use the top chunk of leather which has the most tensile strength.
+          <br>
+          A large appeal to full-grain leather is the lack of uniformity. Often you can see the scars and imperfections present on most top-grain leather footwear.
+          <br>
+          One of the more coveted types of full-grain leathers available is calfskin. In this example we have boxcalf.
+          <br>
+          <img src="img/Boxcalf.jpg" alt="Boxcalf example">
+          <br>
+          Calfskin is considered a very high-end leather type which is known for its resilience,
+          as well as its ability to attain a very attractive patina.
+          <br>
+        </div>
+        <div id="suede">
+          The next type of leather product is suede. Suede is a type of felted leather that is often used on dressier shoes and boots.
+          <br>
+          Suede is a fiberous material that while less water resistant and more fragile than full-grain, has it's own level of nicheness,
+          <br>
+          which gives most suede a richness as well as unique patina patterns.
+          <br>
+          <img src="img/Suede Boots.jpg" alt="Suede boots">
+          <img src="img/Suede Patina.jpg" alt="Suede patina">
+          <br>
+          These two images show how suede develops a patina as well as variety of colors that normal suede can come in.
+          <br>
+        </div>
+        <div id="corrected-grain">
+          <img src="img/41751637485_d74dd9519e_b.jpg" alt="Solovair boots">
+          <br>
+          This pair of Solovair boots are corrected leather. This means that this pair is made up of top grain leathers that aren't 
+          <br>
+          as desirable or may have been more scarred. This is also done to create a uniform look in the leather, but also decreases
+          <br>
+          the longevity of the boot as well as lowering its appeal amongst most leather aficionados.
+          <br> 
+          While there is nothing wrong with corrected grain, you are sacrificing the patina and uniqueness that comes with traditional top grain. 
+        </div>
+      </p>
+      <h3>How should I take care of my footwear?</h3>
+      <p>
+        I'm glad you asked! there is a myriad of ways in which you could take care of your footwear, while there is no "one" option available, 
+        <br>
+        However, there are some general guidelines to what works for your footwear based on formality and how the leather is tanned. 
+        <br>
+        On the more formal end of footwear, things like <a href="https://www.amazon.com/dp/B002Q0C9NS?ref_=cm_sw_r_cp_ud_dp_PPXHKR9KQFAT0M59Y292">Saphir's Renovator</a>
+        and their <a href="https://www.amazon.com/dp/B00J8NT7C2?ref_=cm_sw_r_cp_ud_dp_6EMDZ9MJ3F0MJDJFZ3Q8">Pate De Lux</a> line of wax are essential for 
+        <br>
+        creating a nice shine to the shoe or boot as well as increasing its durability and water resistance.
+        On more rugged shoes or boots 
+        <br>
+        waxes or oils work best. The strongest of these tend to be <a href="https://www.amazon.com/dp/B00AZR3TR4?ref_=cm_sw_r_cp_ud_dp_W8T2MRD7GEK1NXXYP9J6">Mink oil</a>
+        and most waxes that the company of your chosen boot likes most.
+      </p>
+      <h4>What do I need to take care of my shoes?</h4>
+      <p>
+        <img src="img/Shoe brush.jpg" alt="Horsehair brush">
+        <br>
+        While owning a good pair of GYW footwear can be quite exciting, it is important that you take care of your investments from time to time. 
+        <br>
+        This means have the right tools for the job. As a new owner of GYW footwear it is important you have a solid understanding of what each 
+        <br>
+        item works as well as what it is doing to your leather. When you get your first pair of GYW shoes the most important tool at your disposal is 
+        <br>
+        a good shoe brush. Horsehair is the most preferred type of shoe brush, but most work well. Next you'll need <a href="https://stridewise.com/best-boot-conditioners/">conditioner</a> as well as a good <a href="https://www.dontwasteyourmoney.com/best-shoe-polish/"> wax polish</a>.
+        <br>
+      </p>
+      <h5>I have the products, now what?</h5>
+      <p>
+        Now that you have an idea of what everything does, we can start with our guide on how to take care of your investments. 
+        <br>
+        Our <a href="https://youtu.be/BjbHxQXOU14">Guide</a> starts off with a good brushing of your pair of footwear. From here you apply your choice of conditioner to the shoe and allow it 10 mins or so to dry.
+        <br>
+        Once the conditioner is dried, you can brush it all off for a dull sheen. Once you've achieved your sheen you'll be able to apply your choice of wax polish.
+        <br>
+        There are a myriad of ways to do this, either using fire to melt the wax onto the shoe, water to add a mirror shine, or simply appling the wax without any added methods.
+        <br> 
+        Once you've applied your wax you can either use a shammy to give it a high shine, or use a brush to add a more glossy texture to the shoe. Once you've done this,
+        <br> 
+        you can repeat this process 2-3 times for more protection from the elements as well as increasing the shine on the shoe. Once you have finished waxing,
+        <br>
+        you can give the shoe a final brushing and you'll have finished taking care of your investments.
+      </p>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!--Main Body-->
-
-<!--Footer-->
-<div id="footer">
-  <footer class="bg-dark text-white pt-5 pb-4">
-    <div class="container text-center text-md-left">
-      <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Welted Fellas</h5>
-          <p>
-            <div id="footer-info" class="">
-              <a href="index.html" class="text-white">Home</a>
-              <a href="about.html" class="text-white">About</a>
-              <a href="contact.html" class="text-white">Contact</a>
-              <a href="#carousel-indicators" class="text-white">Top of Page</a>
+  <!--Footer-->
+  <div id="footer">
+    <div class="footer bg-dark text-white pt-5 pb-4">
+      <div class="row text-md-left">
+        <div class="container-fluid text-center">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
+            <div class="container-fluid text-md-left">
+              <div class="row">
+                <div id="footer-info" class="row col-md-6">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Welted Fellas</h5>
+                  <ul>
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="about.html" class="text-white">About</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                    <li<a href="#carousel-indicators" class="text-white">Top of Page</a></li>
+                  </ul>
+                </div>
+                <div id="useful-links" class="row col-md-6">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
+                  <ul>
+                    <li><a
+                        href="https://www.reddit.com/r/goodyearwelt/comments/77am8t/updated_introductory_leather_care_guide"
+                        class="text-white">Recommended Products and How to use them.</a></li>
+                    <li><a href="https://youtu.be/o0htHyZ8grw" class="text-white">How to Mirror Shine</a></li>
+                    <li><a href="https://youtu.be/A5lxicuEJrA" class="text-white">Which Conditioner is right for your
+                        shoe</a></li>
+                  </ul>
+                </div>
+                <div id="socials" class="container-fluid pt-4">
+                  <section class="mb-4">
+                    <a href="#"><i class="fa fa-lg fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-lg fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-lg fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-lg fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-lg fa-github"></i></a>
+                  </section>
+                  <div class="text-center p-3" id="copyright">
+                    © 2020 Copyright: <a class="text-center" href="#">WeltedFellas.com</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </p> 
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
-          <p>
-            <div id="useful-links" class="">
-            <a href="https://www.reddit.com/r/goodyearwelt/comments/77am8t/updated_introductory_leather_care_guide/" class="text-white">Recommended Products and How to use them.</a>
-            <a href="https://youtu.be/o0htHyZ8grw" class="text-white">How to Mirror Shine</a>
-            <a href="https://youtu.be/A5lxicuEJrA" class="text-white">Which Conditioner is right for your shoe</a>
-            </div>
-          </p>
           </div>
         </div>
       </div>
     </div>
-  </footer>
-</div>
-<!--Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </div>
+  <!--Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
